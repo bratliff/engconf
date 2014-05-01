@@ -1,0 +1,473 @@
+/*   
+Theme Name: ECI Theme
+Theme URI: 
+Description: A theme for Engineering Conferences International
+Author: Ben Ratliff
+Author URI: http://www.2bitcreative.com
+Template: thematic
+Version: 1.0
+Tags: Thematic, DCI
+.
+ECI Theme is © Ben Ratliff http://www.2bitcreative.com/
+.
+*/
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply basic typography styles */
+@import url('../thematic/library/styles/typography.css');
+
+/* Apply a basic layout */
+@import url('../thematic/library/layouts/2c-l-fixed.css');
+
+/* Apply basic image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Apply default theme styles and colors */
+/* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
+@import url('../thematic/library/styles/default.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+/* page structure */
+
+body {
+	width:100%;
+	text-align:center;
+	background:url("http://www.engconf.org/staging/wp-content/uploads/2012/03/strip-bg.gif");
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:100%
+}
+
+#wrapper {
+ -webkit-border-radius: 20px;
+ -webkit-border-top-left-radius: 0;
+ -moz-border-radius: 20px;
+ -moz-border-radius-topleft: 0;
+ border-radius: 20px;
+ border-top-left-radius: 0;
+        text-align:left;
+	width:960px;
+	margin: 10px auto;
+	background:#fff;
+}
+
+#header {
+ -webkit-border-radius: 20px;
+ -webkit-border-top-left-radius: 0;
+-webkit-border-bottom-left-radius: 0;
+-webkit-border-bottom-right-radius: 0;
+ -moz-border-radius: 20px;
+ -moz-border-radius-topleft: 0;
+ border-radius: 20px;
+ border-top-left-radius: 0;
+ border-bottom-left-radius: 0;
+ border-bottom-right-radius: 0;
+ background:url("http://www.engconf.org/staging/wp-content/uploads/2013/02/eci_header1.jpg") no-repeat;
+ height:190px;
+ width:959px;
+}
+
+#content {
+	margin-left: 50px;	
+	font-size:0.9em;
+}
+
+#main {
+margin: 50px 0 0 0;
+padding: 10px 0 0 0 ;
+line-height:1.1em;
+color:#666;
+width:960px;
+}
+
+#container {
+  float:left;
+  margin:0;
+  width:600px;
+}
+
+#comments {
+	visibility:hidden;
+}
+
+#branding {
+	padding: 88px 0 0 0;
+}
+
+#blog-title a{
+	margin-left:-999px;
+	line-height: 0px;
+	visibility:hidden;
+}
+
+#blog-description {
+    margin-left:-999px;
+    color: #ffffff;
+    font-size: 1.1em;
+visibility:hidden;
+}
+
+#access {
+     background:url("http://www.engconf.org/staging/wp-content/uploads/2012/03/nav-bg.gif");
+     margin-top:45px;
+}
+
+
+.sf-menu {
+	margin-left:30px;
+	text-transform: uppercase;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:1.1em;
+	border-right: none;
+}
+
+#compass_image {
+background:url("http://www.engconf.org/staging/wp-content/uploads/2012/03/compass.png") no-repeat;
+height:93px;
+width:91px;
+z-index:1000;
+}
+
+.sf-menu li {
+	background:none;
+	border:none;
+}
+
+.sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	background: #93a189;
+	color: #ffffff;
+}
+
+.sf-menu a, .sf-menu a:visited {
+    color: #ffffff;
+    border: none;
+}
+
+
+.sf-menu ul a {
+     color: #1e4f6a;
+     background: #cddec6;
+     border: solid 1px #ffffff;
+}
+
+.sf-menu ul a:hover, 
+.sf-menu ul li a:hover {
+     color: #ffffff;
+     background: #93a189;
+}
+
+.sf-menu ul, .sf-menu ul li a, .sf-menu ul li {
+  margin-right:-75px;
+}
+
+.sf-menu ul ul, .sf-menu ul ul li a, .sf-menu ul ul li {
+  width:400px;
+}
+
+.sf-menu ul a:visited {
+    color: #1e4f6a;
+    border: solid 1px #ffffff;
+}
+
+/*  content area */
+
+.entry-content h1 {
+     padding:3px 0;
+     margin:0 0 10px 0;
+     font-size:26px;
+     text-align:center;
+}
+
+
+.entry-content h2 {
+     color: #ffffff;
+     background: #93a189;
+     padding:6px 10px;
+     margin:20px 0px 20px 0px;
+     line-height:26px;
+	text-align:center !important;
+}
+.entry-content h2 a:hover {
+}
+
+.entry-content img {
+ padding:10px;
+}
+
+.entry-title a:active, .entry-title a:hover {
+color:#25658a;
+}
+
+.entry-title {
+padding:0;
+margin:0;
+text-align:center !important;
+}
+
+.page-title {
+    padding: 0 0 14px;
+    font-size: 1.3em;
+    color:#93a189;
+    margin: 0 0 10px 0;
+}
+
+.entry-content {
+    padding: 10px 0 0;
+}
+
+.hentry {
+    padding: 0;
+    margin: 0;
+}
+
+#post-2 .entry-title, #post-835 .entry-title, #post-1674 .entry-title {
+text-align:center;
+}
+
+/* sidebar */
+
+#primary {
+    border:none;
+    border-left: dotted 1px #CCC; 
+    float:right; 
+    padding:0 0 0 5px;
+    width:250px;
+}
+
+.main-aside {
+    float: right;
+    position: relative;
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;	
+    font-size:0.9em;
+    width:180px;
+}
+
+.main-aside ul {
+  margin:0;
+}
+
+.main-aside a {
+color:#6d7965;
+text-decoration:none;
+}
+
+.main-aside a:hover {
+color:#1e4f6a;
+text-decoration:underline;
+}
+
+.aside ul ul {
+    list-style: none;
+}
+
+.aside ul {
+list-style:none;
+width:200px;
+text-align:left;
+ margin:0px;
+padding:0px;
+}
+
+.pageLinks ul{
+list-style:none;
+}
+
+.aside ul ul, aside ul {
+    margin: 0 0 22px 5px;
+    -moz-box-shadow:   none;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   border-radius: 0px;
+   width:150px;
+}
+
+.aside ul ul ul{
+    margin:0 0 0 20px;
+    padding:0;
+    border-radius: 0px;
+}
+
+.aside ul ul ul ul{
+    margin:0 0 0 5px;
+    padding:0;
+    border-radius: 0px;
+}
+
+.aside ul ul li {
+    padding: 2px; 
+    width:200px;
+    line-height:16px;
+}
+
+.aside ul ul ul li {
+}
+
+.aside ul ul ul ul li {
+   list-style: disc inside none;
+}
+
+.aside ul a:link {
+text-decoration:none;
+padding:0;
+margin:0;
+}
+
+.aside ul ul ul {
+    margin-bottom: 0;
+}
+
+#text-2 .textwidget {
+margin:0 0 0 10px;
+}
+
+li.item a.self {
+color:#000;
+text-decoration:underline;
+}
+
+.aside ul ul ul ul li.current_page_item {
+background:#7e8c74;
+padding:5px;
+
+}
+
+.aside .current_page_item .page_item a:hover, .aside .current_page_item .page_item a:active {
+   text-decoration:none; 
+   color:#2a423c;
+}
+
+.aside ul ul ul ul li.current_page_item a {
+ color:#fde585;
+}
+
+.aside .current_page_item a {
+    text-decoration:none;
+}
+.aside .current_page_item:hover {
+    text-decoration:none;
+    color:#2a423c;
+}
+
+input#s {
+  width:152px;
+}
+
+.aside h3 {
+    font-size: 15px;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    line-height: 22px;
+    color:#93a189;
+    font-style: normal;
+    padding: 1px 10px;
+    margin: 0;
+    z-index: 100;
+    width:150px;
+    text-transform: uppercase;
+}
+
+.aside ul li.widgetcontainer{
+ padding-bottom:20px;
+}
+
+.aside a, .aside ul li a, .aside ul ul li a {
+    text-decoration: none;
+}
+
+.aside .current_page_item a {
+    color: #446150;
+    text-decoration: underline;
+}
+
+#searchform {
+margin: 0 0 10px 10px;
+}
+
+#s {
+font-family:arial,helvetica,sans-serif;
+font-size:0.7em;
+color:#999;
+}
+
+.textwidget a {
+font-size:0.9em;
+margin: 0 0 10px 10px;
+}
+
+/*return to top box */
+
+#topBox { 
+
+width: 120px;
+height: 20px;
+position: fixed;
+right:10px;
+bottom:10px;
+background:#93a189;
+z-index:1000;
+text-align:center;
+border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+ -moz-box-shadow:    0px 1px 1px 2px #ccc;
+  -webkit-box-shadow: 0px 1px 1px 2px #ccc;
+  box-shadow:         0px 1px 1px 2px #ccc;
+
+} 
+
+#topBox a:link, #topBox a:active, #topBox a:visited { 
+color:white;
+font-family: arial, helvetica, sans-serif;
+font-size: .7em;
+text-decoration:none;
+text-transform:uppercase;
+} 
+
+#pageLinks {
+    font-family: Arial, Helvetica, sans-serif;	
+    font-size:0.9em;
+    padding: 0px 0px 10px 0px;
+    line-height:15px;
+    width:300px;
+    margin:3px 0px 0px 10px;	
+}
+
+
+#pageLinks a{
+     color:#2a423c;
+     text-decoration:none;
+}
+
+#pageLinks a:before{
+     content:"- ";
+}
+
+
+
+
+#pageLinks a:hover{
+     color:#1d380d;
+     text-decoration:underline;
+}
+
+/* table styles */
+
+th, td {
+    padding: 0;
+    margin: 0;
+}
+
+/* footer styles */
+
+#footer {
+height:70px;
+width:960px;
+text-align:center;
+}
+
+#siteinfo {
+ margin:0 auto;
+}
